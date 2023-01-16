@@ -39,7 +39,7 @@ struct UpdateView: View {
                     .frame(minHeight: 100)
             }
             .padding(14)
-            .navigationTitle("Add a note  🖊️")
+            .navigationTitle("🖊️")
             .onDisappear {
                 listViewModel.updateItem(item: item, title: textFieldText, content: textEditorText)
             }

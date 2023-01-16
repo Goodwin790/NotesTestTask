@@ -27,7 +27,7 @@ struct AddView: View {
                     .cornerRadius(10)
                     .padding(.vertical, 5)
                     .frame(minHeight: 100)
-                    .keyboardType(.asciiCapableNumberPad)
+                    .cornerRadius(10)
                 
             }
             .padding(14)

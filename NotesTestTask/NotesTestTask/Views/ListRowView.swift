@@ -12,44 +12,38 @@ struct ListRowView: View {
     let item: ItemModel
     
     var body: some View {
-        ZStack {
-            Color.gray
-//                .frame(maxWidth: .infinity)
-//                .frame(height: 70)
-                .cornerRadius(10)
-            
-            HStack {
-                if item.isPinned {
-                    Image(systemName: "pin.fill")
-                        .foregroundColor(.red)
-                }
-                VStack(alignment: .leading) {
-                    Text(item.title)
-                        .font(.title)
-                    
-                    Text(item.content)
-                        .font(.headline)
-                }
-                Spacer()
-                Spacer()
+        HStack {
+            if item.isPinned {
+                Image(systemName: "pin.fill")
+                    .foregroundColor(.red)
             }
-            .swipeActions(edge: .leading, allowsFullSwipe: true) {
-                if item.isPinned {
-                    Button("Unpinned") {
-                        listViewModel.pinnedItem(item: item)
-                    }
-                    .tint(.orange)
+            VStack(alignment: .leading) {
+                Text(item.title)
+                    .font(.title)
                     
-                } else {
-                    Button("Pinned") {
-                        listViewModel.pinnedItem(item: item)
-                    }
-                    .tint(.yellow)
-                }
+                Text(item.content)
+                    .font(.headline)
             }
-            .frame(height: 25)
-        .padding(.vertical, 8)
+            Spacer()
+            Spacer()
         }
+        .swipeActions(edge: .leading, allowsFullSwipe: true) {
+            if item.isPinned {
+                Button("Unpinned") {
+                    listViewModel.pinnedItem(item: item)
+                }
+                .tint(.orange)
+                
+            } else {
+                Button("Pinned") {
+                    listViewModel.pinnedItem(item: item)
+                }
+                .tint(.yellow)
+            }
+        }
+        .frame(height: 35)
+        .padding(.vertical, 8)
+        
     }
 }
 
