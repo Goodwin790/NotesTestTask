@@ -43,6 +43,8 @@ class ListViewModel: ObservableObject {
     func updateItem(item: ItemModel, title: String, content: String) {
         if let index = items.firstIndex(where: { $0.id == item.id}) {
             items[index] = item.updateText(title: title, content: content)
+            let element = items.remove(at: index)
+            items.insert(element, at: 0)
         }
     }
     

@@ -11,10 +11,12 @@ struct SearchView: View {
     @Binding var searchText: String
     var body: some View {
         TextField("Search by name or symbol...", text: $searchText)
+            .offset(y: -10)
             .padding(.top)
             .padding(.horizontal)
             .background(Color.secondary.opacity(0.5))
             .cornerRadius(10)
+        
     }
 }
 

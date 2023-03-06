@@ -26,10 +26,7 @@ struct UpdateView: View {
             Color.gray.opacity(0.4).ignoresSafeArea()
             VStack {
                 TextFieldView(textFieldText: $textFieldText)
-                TextEditor(text: $textEditorText)
-                    .cornerRadius(10)
-                    .padding(.vertical, 5)
-                    .frame(minHeight: 100)
+                TextEditorView(textEditorText: $textEditorText)
             }
             .padding(14)
             .navigationTitle("🖊️")
