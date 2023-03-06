@@ -17,6 +17,9 @@
 		C109BBC9296EAB0D002D68B5 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C109BBAD296EAB0C002D68B5 /* ListView.swift */; };
 		C109BBCA296EAB0D002D68B5 /* NoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C109BBAE296EAB0C002D68B5 /* NoItemsView.swift */; };
 		C109BBCB296EAB0D002D68B5 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C109BBAF296EAB0C002D68B5 /* ListRowView.swift */; };
+		C165292B29B2067600F55DB6 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165292A29B2067600F55DB6 /* TextFieldView.swift */; };
+		C165292D29B2099B00F55DB6 /* TextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165292C29B2099B00F55DB6 /* TextEditorView.swift */; };
+		C165293129B20FF100F55DB6 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165293029B20FF100F55DB6 /* SearchView.swift */; };
 		C1DAA9E8296EEA180010A8AB /* UpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DAA9E7296EEA180010A8AB /* UpdateView.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +35,9 @@
 		C109BBAD296EAB0C002D68B5 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		C109BBAE296EAB0C002D68B5 /* NoItemsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
 		C109BBAF296EAB0C002D68B5 /* ListRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		C165292A29B2067600F55DB6 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		C165292C29B2099B00F55DB6 /* TextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorView.swift; sourceTree = "<group>"; };
+		C165293029B20FF100F55DB6 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		C1DAA9E7296EEA180010A8AB /* UpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,7 +74,7 @@
 				C109BB96296EAAC5002D68B5 /* NotesTestTaskApp.swift */,
 				C109BBA5296EAB0C002D68B5 /* Models */,
 				C109BBA8296EAB0C002D68B5 /* ViewModels */,
-				C109BBAB296EAB0C002D68B5 /* Views */,
+				C109BBAB296EAB0C002D68B5 /* Home */,
 				C109BB9A296EAAC8002D68B5 /* Assets.xcassets */,
 				C109BB9C296EAAC8002D68B5 /* Preview Content */,
 			);
@@ -99,15 +105,34 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		C109BBAB296EAB0C002D68B5 /* Views */ = {
+		C109BBAB296EAB0C002D68B5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				C109BBAC296EAB0C002D68B5 /* AddView.swift */,
-				C109BBAD296EAB0C002D68B5 /* ListView.swift */,
-				C109BBAE296EAB0C002D68B5 /* NoItemsView.swift */,
-				C109BBAF296EAB0C002D68B5 /* ListRowView.swift */,
-				C1DAA9E7296EEA180010A8AB /* UpdateView.swift */,
+				C165292E29B20A2300F55DB6 /* Components */,
+				C165292F29B20AA500F55DB6 /* Views */,
 				C107807B29700BFF0026013A /* LaunchScreen.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C165292E29B20A2300F55DB6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C109BBAF296EAB0C002D68B5 /* ListRowView.swift */,
+				C165292C29B2099B00F55DB6 /* TextEditorView.swift */,
+				C165292A29B2067600F55DB6 /* TextFieldView.swift */,
+				C165293029B20FF100F55DB6 /* SearchView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C165292F29B20AA500F55DB6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C109BBAD296EAB0C002D68B5 /* ListView.swift */,
+				C1DAA9E7296EEA180010A8AB /* UpdateView.swift */,
+				C109BBAE296EAB0C002D68B5 /* NoItemsView.swift */,
+				C109BBAC296EAB0C002D68B5 /* AddView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +216,9 @@
 				C109BB97296EAAC5002D68B5 /* NotesTestTaskApp.swift in Sources */,
 				C109BBCB296EAB0D002D68B5 /* ListRowView.swift in Sources */,
 				C109BBCA296EAB0D002D68B5 /* NoItemsView.swift in Sources */,
+				C165292D29B2099B00F55DB6 /* TextEditorView.swift in Sources */,
+				C165292B29B2067600F55DB6 /* TextFieldView.swift in Sources */,
+				C165293129B20FF100F55DB6 /* SearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
